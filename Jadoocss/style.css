@@ -276,14 +276,14 @@ border-top-right-radius: 10% ;
 
 
 #baniere2{
+    position:relative;
      background-image: url(../mesimages/illustration_chef.jpg);
      background-repeat: no-repeat;
      background-position:center;
      background-size:180%;
      padding-bottom: 90px;
      padding-top: 200px;
-    
-
+     height: 1400px;
 }
 
 
@@ -346,9 +346,21 @@ border-top-right-radius: 10% ;
     background-image: url(../illustration_commander.jpg);
     background-repeat: no-repeat;   
     background-size: 120%;  
-   
+    padding-top: 420px ;
     
+       
     }
+
+#leswrapps{
+    position: absolute;
+    bottom: -280px;
+    top:1130px;
+
+
+
+}
+
+
 
 
 #command{
