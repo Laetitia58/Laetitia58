@@ -3,23 +3,22 @@
     margin: 0;
     padding:0;
 }
-
 body{
     font-family:Arial;
     background-color: #FFFFFF;;
 }
-
 header{
-
-position: fixed;
+position: absolute;
 background-color:#FFFFFF;
 width: 100%;
-height:14%;
+height:17%;
 padding-top: 1%;
+background-image: url(../mesimages/burger_icon.svg);
+background-repeat: no-repeat;
+
+
 
 }
-
-
 .posit{
    
     display: flex;    
@@ -27,26 +26,47 @@ padding-top: 1%;
       
  }
  
-
-
 .logmk{
      
   width:30px ;
   margin-right: 20px;
-    }
+}
+
+#logtremble:hover{
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+             }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+                    }  
+
+                      
+ 
+ 
+ 
+
 
 
 .logjo{
  
    margin-left: 2px;
-
 }
-
 .burgerjadoo{
 margin-left: 100px;
 }
-
-
 .barremenu{
  
     display: flex;
@@ -54,18 +74,14 @@ margin-left: 100px;
     margin-left: 910px;
     font-size: 18px;
     
-
 }
-
 .motnv{
     margin-right: 25px;
     text-decoration: none;
  }
-
  .motnv:hover{
     text-decoration: underline;
 }
-
 .motde{
     margin-right: 23px;
     text-decoration: none;
@@ -73,7 +89,6 @@ margin-left: 100px;
  .motde:hover{
     text-decoration: underline;
 }
-
  .motcom{
     margin-right: 30px;
     text-decoration: none;
@@ -81,7 +96,6 @@ margin-left: 100px;
  .motcom:hover{
     text-decoration: underline;
 }
-
  .motco{
     margin-right: 2px;
     text-decoration: none;
@@ -92,7 +106,6 @@ margin-left: 100px;
 
 
 
-
 #baniere1{
    
     background-image: url(../mesimages/illustration_principale.jpg) ;
@@ -100,22 +113,15 @@ margin-left: 100px;
     padding-top: 0.1%; 
     font-size: 80px;
 }
-
-
 #voyage{
-
     color: rgb(209, 85, 28);
     margin-top: 10%;
     margin-left: 7%;
     margin-bottom: 2%;   
     font-size: 20px;
     font-weight: bold;   
-
 }
-
-
  .titblc1{
-
   background: url(../mesimages/souligne_rose.svg) no-repeat 19px 228px ; 
   color:aliceblue;
   font-family: Arial, Helvetica, sans-serif;   
@@ -136,8 +142,6 @@ margin-left: 100px;
         
         background-repeat: no-repeat;                    
  }
-
-
 #decc1{
     border:2px goldenrod;
     width: 180px;
@@ -151,29 +155,19 @@ margin-left: 100px;
     border-radius:10px 10px 10px 10px;
     margin-bottom: 100px;
  
-
 }
-
-
-
 .mil{
     width: 600;
     margin-left: auto;
     margin-right: auto;
-
 }
-
-
 .decouv{
     font-size:120%;
     font-weight: 600;  
     color: rgba(28, 28, 73, 0.555);
     text-align: center;
     margin-top: 7%;
-
     }
-
-
 .blf{
   font-size: 50px;
   font-weight:bold;
@@ -183,11 +177,8 @@ margin-left: 100px;
   margin-top: 0px;
   margin-bottom: 2% ;
  
-
 }
-
 #plats{ 
-
         display: flex;
         flex-wrap: wrap;
         justify-content: center;   
@@ -196,17 +187,13 @@ margin-left: 100px;
         line-height: 25px;
         font-weight: bold;
         color:dimgray;
-
 }
-
 #plats img{
 border-top-left-radius: 10%;
 border-top-right-radius: 10% ;
-
 }
     
 #plats div{
-
     margin-right: 1.9%;
     width: 280px;
     box-shadow: 0px 2px 2px rgb(160, 148, 148);
@@ -216,15 +203,9 @@ border-top-right-radius: 10% ;
     padding-bottom: 1%;
     
 }
-
-
 #les_makis img{
-
         margin-bottom: 50px;
-
 }
-
-
 #les_makis{
         display: flex;
         flex-wrap: wrap;
@@ -232,13 +213,11 @@ border-top-right-radius: 10% ;
         line-height: 40px;
         margin-bottom: 130px;
         margin-left: 1%;
-        word-spacing: 1px;
-     
-}
-
+        word-spacing: 1px;    
+               }
+               
 #les_makis div{
-     
-    margin-right: 0.7px;
+   margin-right: 0.7px;
     margin-left: 0.1px;
     margin-top: 20px;
     width: 265px;    
@@ -247,15 +226,12 @@ border-top-right-radius: 10% ;
     background-color: #FFFFFF;
     border-radius:20px 20px 20px 20px;
     box-shadow: 0px;
+             }
 
-}
 
-#les_makis div:hover{
-    
+#les_makis div:hover{    
     box-shadow: 2px 2px 3px rgb(54, 53, 53);
-    }
-
-
+              }
 
 
 #decc2{
@@ -270,9 +246,7 @@ border-top-right-radius: 10% ;
     border-radius:10px 10px 10px 10px;
     margin-bottom: 100px;
     margin-left: 45%;
-
-}
-
+            }
 
 
 #baniere2{
@@ -284,11 +258,9 @@ border-top-right-radius: 10% ;
      padding-bottom: 90px;
      padding-top: 200px;
      height: 1400px;
-}
-
+             }
 
 #konnichiwa{
-
     background: url(../mesimages/button_play.svg) no-repeat -3px 70px ;
     width: 16%;
     margin-left: 154px;
@@ -297,9 +269,11 @@ border-top-right-radius: 10% ;
     border-bottom-left-radius: 9%;
     border-bottom-right-radius: 9%;
     border-top-left-radius: 9%;
-    border-top-right-radius:9%;
-    
-}
+    border-top-right-radius:9%; 
+       position: relative;
+             }
+
+
 
 #clip{
     position: relative;
@@ -307,13 +281,11 @@ border-top-right-radius: 10% ;
     border-radius: 50%;    
     margin-left: -200px ;
     margin-bottom: 130px;
-
-}
+       }
 
 
 
 .titblc2{
-
   background: url(../mesimages/souligne_rose.svg) no-repeat -3px 70px ;
   color:aliceblue;
   font-family: Arial, Helvetica, sans-serif;   
@@ -321,122 +293,94 @@ border-top-right-radius: 10% ;
   font-size: 88px;
   margin-left: 8%;
   margin-bottom: 50px;
-  line-height: 90px;
-  
-}
+  line-height: 90px; 
+       }
 
 
-.sstitblc2{
-    
-    
+.sstitblc2{     
     color:aliceblue;
     font-family: Arial, Helvetica, sans-serif;       
     font-size: 19px;
     line-height: 30px;
     margin-left: 8%;
-    margin-top: 10px;
-          
-}
+    margin-top: 10px;          
+          }
 
 
+#baniere3{   
+    background-image: url(../mesimages/illustration_commander.jpg);
+    padding-top: 200px;
+    padding-bottom: 950px;
+    height: 960px;
 
 
-#baniere3{
-    
-    background-image: url(../illustration_commander.jpg);
-    background-repeat: no-repeat;   
-    background-size: 120%;  
-    padding-top: 400px ;
-    
-       
     }
+
 
 #leswrapps{
     position: absolute;
     bottom: -280px;
     top:1130px;
-
-
-
-}
-
-
+         }
 
 
 #command{
-
-    padding-top: 5%;
+    padding-top: 15%;
     margin-left:8%;
-    margin-bottom: 2%;
-
-}
+    margin-bottom: 2%; 
+        }
    
 
-#rap{
 
+#rap{
    font-weight: bold; 
    color:dimgray;
    margin-bottom: 1%;  
+      }
 
-}
 
 
 #comm{
     font-size: 50px;
     font-weight: bold;
-    color:rgb(209, 85, 28) ;
-  
-    margin-bottom: 0%;
-   
-}   
+    color:rgb(209, 85, 28) ; 
+    margin-bottom: 0%;   
+          }   
+
 
 #slsj{
         font-size: 50px;
         font-weight:bolder;
         color:rgb(6, 6, 65);
         font-family:Lucida Sans Unicode;
-        padding-top: 0%;
-       
-        margin-top: 0px;
-        
+        padding-top: 0%;      
+        margin-top: 0px;        
     }
-
-
+    
 #partenaires{
     
     margin-left: 9%;
    
 }
-
 #partenaires img{
-
     margin-left: -40%;
 }
-
-
 .cotacot{
-
     display:flex;
     height: 90px;
 }
-
 #list1{
     list-style: none; 
 }
-
 #list2{
     list-style: none;     
 }
-
 #list3{
     list-style: none;   
 }
-
 .ub{
-
     width: 60px;
 }
-
 .logjadoo{
     width: 60px;
 }
@@ -445,9 +389,34 @@ border-top-right-radius: 10% ;
     width: 60px;  
 }
 
+.logjadoo:hover{
+ 
+        animation: shake 0.5s;
+    
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+                 }
+      
+      @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+                        }  
+    
+
+}
+
+
 
 #decc3{
-
     border:2px goldenrod;
     width: 180px;
     height:50px;
@@ -460,14 +429,7 @@ border-top-right-radius: 10% ;
     margin-top: 30px;
     margin-bottom: 100px;
     margin-left: -1px;
-
 }
-
-
-
-
-
-
 #formulairearemplir{   
    display: flex;
    margin: auto;
@@ -476,42 +438,31 @@ border-top-right-radius: 10% ;
    border-radius: 4%;
    width:1020px;
 }
-
 #formulairecases{
   
    width:50%;
    margin:50px;
    padding-bottom: 1px;
-
 }
-
 h4{
     margin-bottom: 30px;
     font-size:19px;
  
 }
-
 .formalignnom{
    font-size: 15px;
   display:flex;  
   justify-content: space-between;
 }
-
-
-
-
 .formalign{
      display: block;
      line-height: 50px;
    
 }
-
 legend {
     color:lightslategrey;  
     font-size: 15px;
     }
-
-
 #envoyermsg{
     width: 32%;
     height: 50px;
@@ -524,127 +475,131 @@ legend {
     color:#FFFFFF;
     border-radius: 8%;
     border-color:rgb(69, 145, 216) ;
-
 }
-
 #envoyermsg:hover{
-
  /* L'image est grossie de 10% */
 -webkit-transform:scale(1.10); /* Safari et Chrome */
 -moz-transform:scale(1.10); /* Firefox */
 -ms-transform:scale(1.10); /* Internet Explorer 9 */
 -o-transform:scale(1.10); /* Opera */
 transform:scale(1.10);
-
-
 }
-
-
 #formulairefoto{
     width:60% ;
     border-top-right-radius: 4%;
     border-bottom-right-radius: 4%;
     border-top-left-radius: 0px;
     border-top-left-radius: 0px;
-}
-
+               }
 
 
 footer{
-    background-color:slategray;
-    
+    background-color:lightgray;   
+       }
+#footart{
+
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
 }
 
-#footart{
+#foot1{
  
-    display:flex;   
+    display:flex; 
+    flex-direction: column;  
     justify-content:space-around;   
     margin-left: 50px;
     line-height: 25px;
-
-}
+           }
 
 
 .f1{
-
   width:50px;
   margin-left:25px;
   margin-right: 20px;
+      }
 
+.f1:hover{
+
+        animation: shake 0.5s;
+        
+        /* When the animation is finished, start again */
+        animation-iteration-count: infinite;
+                 }
+      
+      @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+                        }  
+    
+       
 }
 
 .jf1{
  width:150px;   
 }
-
 article{
     padding-top: 2%;
     margin-bottom: 3%;
 }
-
 #foot1{
     margin-left: 25px;
     display: inline-box
 }
-
 aside{
     text-align: center;
 }
-
-
 #resto{
-
 list-style: none;
 }
-
-
 #foot2{
-
     margin-top: 5px;   
     margin-left: -2%;    
 }
-
-
 #foot3{
-
  margin-top: 20px;   
  margin-left: -15%;
 }
-
 #foot4{
-
     list-style: none;
     margin-top:40px;
-}
+       }
 
+
+
+       
 
 footer form{
 display: inline;
-
 }
-
-
-
 #buttgoo{
-
 background-color: black;
 color: #FFFFFF;
 }
-
 #buttapp{
 background-color: black;
 color: #FFFFFF;
 }
-
-
-
-
-@media screen and (max-width:780px){
-
-
+@media screen and (max-width:720px){
     header{
-      
+      height: 10%;
+      background-position:right; 
     }
+
+    .posit{
+        display: block;
+        margin-left: 15px;
+        margin-top: 15px;
+          }
 
 
     #voyage{         
@@ -654,27 +609,32 @@ color: #FFFFFF;
         margin-bottom: 10%;
         margin-left: 0%;
             } 
-
-
     .titblc1{    
         font-size: 55%;
         margin-left: 0%;
         text-align: center;
             }
-
-
     .sstitblc1{    
     font-size: 25%;
     margin-left: 0%;
     text-align: center;
               }
   
-
     #decc1{
         display: block;
         margin-left:auto;
-        margin-right: auto;     
-           }
+        margin-right: auto;
+               }  
+               
+               
+    #decc1:hover{
+            -webkit-transform:scale(1.06); /* Safari et Chrome */
+            -moz-transform:scale(1.06); /* Firefox */
+            -ms-transform:scale(1.06); /* Internet Explorer 9 */
+            -o-transform:scale(1.06); /* Opera */
+            transform:scale(1.06);
+                   }
+
 
 
     .blf{
@@ -682,21 +642,64 @@ color: #FFFFFF;
     padding-top: 3%;
     padding-bottom: 10%;
           }
-
-
     #plats{
         border-radius: 0%;
            }
-         
+
+
+
+
+    #les_makis img{
+   width:115px;
+   height: 120px;
+          }
+
+
+    #les_makis div{
+        display:flex;
+        flex-direction: row; 
+        height:-1px;          
+                }  
+
+    .legendemakis{
+        display: flex;
+        flex-wrap: wrap; 
+        line-height: 30px;              
+               }  
+
+
+
+
+    #les_makis div:hover{    
+    box-shadow:none;
+              }
+
+    #decc2:hover{
+        -webkit-transform:scale(1.06); /* Safari et Chrome */
+        -moz-transform:scale(1.06); /* Firefox */
+        -ms-transform:scale(1.06); /* Internet Explorer 9 */
+        -o-transform:scale(1.06); /* Opera */
+        transform:scale(1.06);
+                }
+
 
    /* pour cacher le texte*/
     .titblc2, .sstitblc2{
            display: none;
-
-    }
-
-
+                 }
   
+
+
+    #wrapper1{
+        width: 100%;
+        margin-top: -255px;
+              }
+
+    #wrapper2{
+        width: 100%;
+        margin-top: -4px;
+                   }
+
 
 
     #rap{
@@ -705,17 +708,14 @@ color: #FFFFFF;
     margin-top: 10%;
            }
     
-
-   #comm, #slsj{
+    #comm, #slsj{
     font-size: 40px;
     text-align: center;
             }
 
-
     #slsj{
     margin-bottom: 12%;
         }
-
 
     #partenaires{
         display: block;
@@ -726,14 +726,19 @@ color: #FFFFFF;
 
     .cotacot{
     margin-bottom: 18px;
-             }          
+             }   
+
+legend{
+    text-align: center;
+    margin-left: -53%;
+}
+
 
    
     #formulairearemplir{
         border-radius: 0%;
         margin-bottom: 0%; 
                  }
-
 
     #formulairecases div{
         width: auto;
@@ -746,9 +751,34 @@ color: #FFFFFF;
         margin-right: auto;
         padding-bottom: 0%;
                  }
+
     
+    #decc2{
+    margin-top: 50px;
+    margin-right:55px ;
+    margin-left: 50px;
+             }
 
 
+    #decc3:hover{
+                -webkit-transform:scale(1.06); /* Safari et Chrome */
+                -moz-transform:scale(1.06); /* Firefox */
+                -ms-transform:scale(1.06); /* Internet Explorer 9 */
+                -o-transform:scale(1.06); /* Opera */
+                transform:scale(1.06);
+                       }
+
+
+    #footart{
+     display: flex;
+     flex-wrap: wrap; 
+     justify-items:center;   
+              }
+     
+
+    #footart div{
+    line-height: 40px;
+    }
+    
 }
-
 
