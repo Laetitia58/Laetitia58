@@ -35,10 +35,11 @@
                        
 
               <ul class="barremenu">
-                  <li class="motnv">Les nouveautés</li> 
+                  <li class="motnv">Les nouveautés</li> 
                   <li class="motde">Découvrir</li> 
                   <li class="motcom">Commander</li> 
-                  <li class="motco">Contactez-nous</li>
+                  <li class="motco">Contactez - nous</li>
+                  <li><img id="imgburger" src="mesimages/burger_icon.svg">              </li>
               </ul>
 
        </div>    
@@ -78,6 +79,8 @@
 
 <section id="menucarte">
 
+<div>
+
           <div class="mil">
                         <p class="decouv">Découvrez<Br></p>
                         <p class="blf">Les nouveautés Jadoo</p>
@@ -85,26 +88,39 @@
 
 
          <div id="plats">  
-                       <div>
-                             <img width="280px" src="mesimages/plat_1.png">
-                                <p>Boulettes de poulet<br> au gingimbre sauce sucrée<br> salée "Tsukuné"</p>
-                         </div>
-                       <div>
-                             <img width="280px" src="mesimages/plat_2.png">
-                                     <p>Nouilles japonaises<br> chaudes à base de farine<br> de blé "Udon"</p>
-                         </div>
 
-                      <div>
-                             <img width="280px" src="mesimages/plat_3.png">
-                                     <p>Echine de porc panée à la<br> japonaise "Tonkatsu-<br>Teishoku"</p>
-                         </div>
+
+                       <div class="imgcarousel">
+                             <div class="platcarousel"><img width="280px" src="mesimages/plat_1.png">
+                               <p>Boulettes de poulet<br> au gingimbre sauce sucrée<br> salée "Tsukuné"</p>
+                            </div>
+                       </div>
+
+
+
+                       <div class="imgcarousel">
+                             <div class="platcarousel"><img width="280px" src="mesimages/plat_2.png">
+                               <p>Nouilles japonaises<br> chaudes à base de farine<br> de blé "Udon"</p>
+                             </div>
+                       </div>
+
+
+
+                       <div class="imgcarousel">
+                             <div class="platcarousel"><img width="280px" src="mesimages/plat_3.png">
+                                <p>Echine de porc panée à la<br> japonaise "Tonkatsu-<br>Teishoku"</p>
+                             </div>
+                       </div>
+
+
+
          </div>
 
 
 
          <div id="les_makis">
 
-                <div> 
+                <div id="makisshadow"> 
                            <img width="150px" src="mesimages/maki_1.png">
                            
                     <div class="legendemakis">
@@ -115,7 +131,7 @@
 
 
 
-                <div>   
+                <div id="makisshadow">   
                           <img width="150px" src="mesimages/maki_2.png">
 
                      <div class="legendemakis">     
@@ -127,7 +143,7 @@
 
 
 
-                <div>
+                <div id="makisshadow">
                          <img width="150px" src="mesimages/maki_3.png">
 
                      <div class="legendemakis">  
@@ -138,7 +154,7 @@
 
 
 
-                <div>
+                <div id="makisshadow">
                       
                          <img width="150px" src="mesimages/maki_4.png">
 
@@ -147,9 +163,9 @@
                                 <div class="ingredients" >Oeufs de saumon</div>
                          </div> 
                 </div>
+</div>
 
-
-         <button id="decc2" type="button" >Découvrir la carte</button>  
+       <button id="decc2">Découvrir la carte</button> 
 
 
  </section>
@@ -287,13 +303,15 @@
         <div class="formalignnom">
             <div class="formalign"> 
                 <label for="nom">Nom:</label><br>                           
-                <input type="text" id="name">                           
+                <input type="text" id="name" required
+                minlength="4" maxlength="8" size="25">                          
             </div>
 
 
             <div class="formalign" >
                 <label for="prenom">Prénom:</label><br>
-                <input type="text" id="name">                               
+                <input type="text" id="name" required
+                minlength="4" maxlength="8" size="25">                               
             </div>
         </div>
 
@@ -301,7 +319,8 @@
 
         <div class="formalign" >
             <label for="mail">Adresse e-mail:</label><br>
-            <input type="email" id="mail">
+            <input type="email" id="mail" required
+            minlength="4" maxlength="8" size="80">
         </div>
 
         <div class="formalign">
